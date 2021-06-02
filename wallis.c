@@ -23,4 +23,11 @@ int main(void) {
     }
   }
 }
+float wallis_pi(int x){
+ float product=1;
+ for(float n=1;n<1000;n++){
+     product*=4*n*n/(4*n*n-1);}
+        float ret=2*product;
+             return ret;
+     }
 
