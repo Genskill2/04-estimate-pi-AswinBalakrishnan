@@ -43,13 +43,13 @@ float mc_pi(int p){
     int count=0;
     int total=0;
     for(int i=1;i<=p;i++){
-        float x=frandom();
-        float y=frandom();
+        float x=2*frandom()-1;
+        float y=2*frandom()-1;
         total++;
         float d=(x*x+y*y);
         if(d<=1)
-        count++;}
+        count++;
+        }
    float pi=4*(float)count/total;
-       return pi;
+              return pi;
     }
-
