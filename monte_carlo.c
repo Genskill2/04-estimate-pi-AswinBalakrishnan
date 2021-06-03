@@ -47,7 +47,7 @@ float mc_pi(int p){
         float y=2*frandom()-1;
         total++;
         float d=(x*x+y*y);
-        if(d<=1)
+        if(d<1)
         count++;
         }
    float pi=4*(float)count/total;
