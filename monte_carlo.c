@@ -42,15 +42,14 @@ int main(void) {
 float mc_pi(int p){
     int count=0;
     int total=0;
-        for(int i=0;i<10000;i++){
+    for(int i=0;i<=p;i++){
         float x=frandom();
         float y=frandom();
         total++;
-        double d=sqrt((double)x*(double)x+(double)y*(double)y);
+        float d=sqrt(x*x+y*y);
         if(d<1)
-        count++;
-        }
-   float pi=(double)4*((double)count/(double)total);
+        count++;}
+   float pi=4*((float)count/total);
        return pi;
     }
 
