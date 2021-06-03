@@ -30,4 +30,3 @@ float wallis_pi(int x){
         float ret=2*product;
              return ret;
      }
-
